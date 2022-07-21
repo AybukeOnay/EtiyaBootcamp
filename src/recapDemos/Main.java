@@ -15,6 +15,12 @@ public class Main {
 		
 		PerfectNumber perfectNumber = new PerfectNumber();
 		perfectNumber.isNumberPerfect(6);
+		
+		FriendlyNumber friendlyNumber = new FriendlyNumber();
+		friendlyNumber.findFriendlyNumber(220, 284);
+		
+		ArrayFindNumber arrayFindNumber = new ArrayFindNumber();
+		arrayFindNumber.findNumberInArray(5);
 				
 	}
 	
