@@ -1,16 +1,12 @@
 package business.concretes;
 
 import business.abstracts.NotificationService;
-import entities.concretes.User;
+import entities.User;
 
-public class SmsNotification implements NotificationService {
+public class SmsNotification implements NotificationService
+{
     @Override
-    public void register(User user) {
-        System.out.println(user.getEmail() + ": Sms ile kayit mesaji gonderildi");
-    }
-
-    @Override
-    public void forgotPassword(User user) {
-        System.out.println(user.getPassword() + ": Sms ile sifre gonderildi");
+    public void sendNotification(User user) {
+        System.out.println(user.getEmail() + ": Sms notification");
     }
 }

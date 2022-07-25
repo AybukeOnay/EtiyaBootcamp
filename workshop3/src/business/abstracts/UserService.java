@@ -1,14 +1,8 @@
 package business.abstracts;
 
-import entities.concretes.User;
-
-import java.util.List;
+import entities.User;
 
 public interface UserService {
-    void add(User user);
-    void delete(User user);
-    void update(User user);
-    List<User> getAll();
+    void register(User user);
     void forgotPassword(User user);
-
 }
