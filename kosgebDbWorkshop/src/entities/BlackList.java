@@ -1,16 +1,16 @@
 package entities;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BlackList {
-    private int id;
-    private Applicant applicant;
+
+    private final List<Applicant> applicants = new ArrayList<>();
 
     public BlackList() {
     }
 
-    public BlackList(int id, Applicant applicant) {
-        this.id = id;
-        this.applicant = applicant;
+    public List<Applicant> getApplicants() {
+        return applicants;
     }
-
-
 }

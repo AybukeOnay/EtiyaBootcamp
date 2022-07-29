@@ -13,8 +13,12 @@ public class Main {
         Personnel personnel2 = new Personnel(2,"personel2","098", "Fatma","Demir","021","2000");
 
         Corporate corporate = new Corporate(1,"Etiya","100","011","Bilisim");
+        Corporate corporate2 = new Corporate(2,"Inova","999","120","Bilisim");
 
         Union union = new Union(1,"Sendika","000","SSK");
+
+        BlackList blackList = new BlackList();
+        blackList.getApplicants().add(corporate2);
 
         Role role1 = new Role(1,"Kredi goruntuleyebilir");
         Role role2 = new Role(2,"Kredi onaylayabilir");
